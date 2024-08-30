@@ -1,0 +1,124 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+
+#customers, #order_forms{
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+#order_forms td, #order_forms th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#customers tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+#order_forms tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+#customers tr:hover {
+    background-color: #ddd;
+}
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #2c3338;
+    color: white;
+}
+#order_forms tr:hover {
+    background-color: #ddd;
+}
+#order_forms th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #2c3338;
+    color: white;
+}
+.dataTables_wrapper .dataTables_length select {
+    padding: 0px 15px !important;
+}
+
+.toplevel_settings .col-sm-4 {
+    float: left;
+    width: 33%;
+}
+.multiselect-dropdown {
+    width: 74% !important;
+}
+.payment-method-tab {
+    width: 30%;
+    float: left;
+    cursor: pointer;
+    background: #f0f0f1;
+    border: 1px #333;
+    padding: 1.6%;
+}
+.payment-method-tab.active {
+    background-color: #ccc;
+}
+.payment-method-settings {
+    clear: both;
+}
+.card-custom {
+    border: 1px solid;
+    margin-top: 5px;
+    padding: 2%;
+}
+#message-box {
+    margin: 10px;
+}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+.clear-all, .get-data, .save-template {
+    display: none !important;
+}
+select.order-form-services-list {
+    display: none !important;
+}
